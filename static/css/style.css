@@ -1,0 +1,428 @@
+/* ================================
+Global styles
+================================ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  }
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+background: #f4f6f8;
+color: #263238;
+line-height: 1.6;
+}
+
+/* ================================
+Layout
+================================ */
+
+.container {
+width: 90%;
+max-width: 900px;
+margin: 0 auto;
+}
+
+/* ================================
+Header
+================================ */
+
+.site-header {
+background: #17365d;
+color: white;
+padding: 35px 0;
+text-align: center;
+}
+
+.site-header h1 {
+font-size: 2rem;
+margin-bottom: 8px;
+}
+
+.site-header p {
+font-size: 1rem;
+opacity: 0.9;
+}
+
+/* ================================
+Registration card
+================================ */
+
+.registration-card {
+background: white;
+margin: 40px auto;
+padding: 40px;
+border-radius: 12px;
+box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.form-header {
+margin-bottom: 30px;
+}
+
+.form-header h2 {
+font-size: 1.6rem;
+margin-bottom: 8px;
+}
+
+.form-header p {
+color: #607d8b;
+}
+
+/* ================================
+Form sections
+================================ */
+
+fieldset {
+border: none;
+border-top: 1px solid #dfe4e8;
+padding-top: 25px;
+margin-bottom: 30px;
+}
+
+legend {
+font-size: 1.2rem;
+font-weight: bold;
+padding-right: 15px;
+color: #17365d;
+}
+
+/* ================================
+Form layout
+================================ */
+
+.form-row {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 20px;
+}
+
+.form-group {
+margin-bottom: 20px;
+}
+
+.form-group label {
+display: block;
+font-weight: 600;
+margin-bottom: 7px;
+}
+
+.required {
+color: #c62828;
+}
+
+/* ================================
+Inputs
+================================ */
+
+input,
+textarea {
+width: 100%;
+padding: 12px 14px;
+border: 1px solid #cfd8dc;
+border-radius: 6px;
+font-family: inherit;
+font-size: 1rem;
+background: white;
+transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+textarea {
+resize: vertical;
+min-height: 90px;
+}
+
+/* Input focus state */
+
+input:focus,
+textarea:focus {
+outline: none;
+border-color: #17365d;
+box-shadow: 0 0 0 3px rgba(23, 54, 93, 0.12);
+}
+
+/* Browser validation */
+
+input:invalid:not(:placeholder-shown) {
+border-color: #c62828;
+}
+
+/* Help text */
+
+small {
+display: block;
+margin-top: 5px;
+color: #78909c;
+font-size: 0.85rem;
+}
+
+/* ================================
+Buttons
+================================ */
+
+.form-actions {
+display: flex;
+justify-content: flex-end;
+gap: 15px;
+margin-top: 10px;
+}
+
+button {
+border: none;
+border-radius: 6px;
+padding: 12px 22px;
+font-size: 1rem;
+font-weight: 600;
+cursor: pointer;
+transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.primary-button {
+background: #17365d;
+color: white;
+}
+
+.secondary-button {
+background: #eceff1;
+color: #37474f;
+}
+
+button:hover {
+transform: translateY(-1px);
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.primary-button:hover {
+background: #0f2948;
+}
+
+.secondary-button:hover {
+background: #dfe3e6;
+}
+
+button:active {
+transform: translateY(0);
+}
+
+/* ================================
+Footer
+================================ */
+
+.site-footer {
+text-align: center;
+padding: 25px 0;
+color: #78909c;
+font-size: 0.85rem;
+}
+
+/* ================================
+Mobile responsiveness
+================================ */
+
+@media (max-width: 650px) {
+
+```
+.site-header h1 {
+    font-size: 1.5rem;
+}
+
+.registration-card {
+    padding: 25px 20px;
+    margin: 25px auto;
+}
+
+.form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+}
+
+.form-actions {
+    flex-direction: column-reverse;
+}
+
+button {
+    width: 100%;
+}
+```
+
+}
+
+
+/* ================================
+Submission success page
+================================ */
+
+.success-card {
+background: white;
+max-width: 650px;
+margin: 70px auto;
+padding: 50px 40px;
+border-radius: 12px;
+text-align: center;
+box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Success checkmark */
+
+.success-icon {
+width: 70px;
+height: 70px;
+margin: 0 auto 25px;
+
+```
+display: flex;
+align-items: center;
+justify-content: center;
+
+border-radius: 50%;
+
+background: #e8f5e9;
+color: #2e7d32;
+
+font-size: 2.2rem;
+font-weight: bold;
+```
+
+}
+
+/* Main message */
+
+.success-card h2 {
+color: #17365d;
+font-size: 1.8rem;
+margin-bottom: 15px;
+}
+
+.success-message {
+color: #546e7a;
+font-size: 1.05rem;
+margin-bottom: 25px;
+}
+
+/* Additional information */
+
+.success-details {
+background: #f5f7f9;
+border-radius: 8px;
+padding: 18px;
+margin-bottom: 30px;
+
+```
+color: #607d8b;
+font-size: 0.9rem;
+```
+
+}
+
+.success-details p + p {
+margin-top: 8px;
+}
+
+/* Button */
+
+.success-actions {
+margin-top: 10px;
+}
+
+.success-actions a {
+display: inline-block;
+text-decoration: none;
+}
+
+/* Mobile */
+
+@media (max-width: 650px) {
+
+```
+.success-card {
+    margin: 35px auto;
+    padding: 40px 25px;
+}
+
+.success-card h2 {
+    font-size: 1.5rem;
+}
+```
+
+}
+
+/* ================================
+   Error Page
+================================ */
+
+.error-card {
+    max-width: 650px;
+    margin: 60px auto;
+    padding: 45px 40px;
+    background: #ffffff;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.error-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background: #f8d7da;
+    color: #842029;
+
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.error-card h2 {
+    margin-bottom: 15px;
+    color: #842029;
+    font-size: 28px;
+}
+
+.error-message {
+    margin-bottom: 20px;
+    color: #333333;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.error-details {
+    margin: 25px 0;
+    padding: 18px;
+
+    background: #f8f9fa;
+    border-radius: 8px;
+
+    color: #555555;
+    line-height: 1.6;
+}
+
+.error-actions {
+    margin-top: 25px;
+}
+
+/* ================================
+   Error Page - Mobile
+================================ */
+
+@media (max-width: 650px) {
+
+    .error-card {
+        margin: 30px 15px;
+        padding: 35px 25px;
+    }
+
+    .error-card h2 {
+        font-size: 24px;
+    }
+
+    .error-message {
+        font-size: 16px;
+    }
+}
