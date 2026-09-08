@@ -23,11 +23,11 @@ def register_member():
 
     try:
         connection = psycopg2.connect(
-            dbname="lsic_membership",
-            user="admin",
-            password="abrantie_dev",
-            host="localhost",
-            port="5432"
+            dbname=os.environ["DB_NAME"],
+            user=os.environ["DB_USER"],
+            password=os.environ["DB_PASSWORD"],
+            host=os.environ["DB_HOST"],
+            port=os.environ["DB_PORT"]
         )
 
 
